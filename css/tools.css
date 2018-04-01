@@ -1,0 +1,45 @@
+/*工具类样式*/
+body{
+	width: 100%;
+	font: 12px "宋体";
+}
+/*"固定"宽、居中*/
+.wrap{
+	margin: 0 auto;
+}
+@media only all and (min-width: 1881px) {
+		.wrap{
+			width: 1780px;
+		}
+}
+@media only all and (min-width:1251px) and (max-width:1880px) {
+	 .wrap{
+	 	width: 1180px;
+	 }
+}
+@media only all and (min-width:951px ) and (max-width:1250px) {
+	.wrap{
+	 	width: 880px;
+	 }
+}
+@media only all and (max-width:950px) {
+	.wrap{
+	 	width: 580px;
+	 }
+}
+/*浮动*/
+.tl{
+	float: left;
+}
+.tr{
+	float: right;
+}
+/*清除浮动*/
+.clearfix{
+	*zoom: 1;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}

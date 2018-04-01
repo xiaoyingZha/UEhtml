@@ -1,0 +1,260 @@
+//定量
+//圆角
+.border-radius (@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+.g_top{
+    height: 50px;
+    font-family: "微软雅黑";
+    background-color: #323436;
+    .gt_content{
+        height: 100%;
+    }
+    .gtc_left{
+//      width: 520px;
+        height: 50px;
+    }
+    .gtcl_logo{
+        width: 128px;
+        height: 35px;
+        margin-top: 7px;
+        margin-right: 24px;
+        background: url(../img/logo.png) no-repeat;
+        text-indent: -9999px;
+    }
+    .gtcl_list{
+        height: 50px;
+        .gtcl_item{
+            height: 50px;
+            line-height: 50px;
+            font-size: 14px;
+            >a{
+                display: block;
+                height:100%;
+                padding: 0 20px;
+                color: #8c8c8c;
+            }
+            &:hover{
+                background-color: #454648;
+                >a{
+                    color: #fff;
+                }
+            }
+            
+        }
+        @media all and (max-width:1249px){
+            .gtcl_item{
+                display: none;
+            }
+        }
+        .all_item{
+            display: none;
+            position: relative;
+            z-index: 2;
+            background-color: #454648;
+            .ai_tu{
+                width: 56px;
+                height: 50px;
+                cursor: pointer;
+                img{
+                    float: left;
+                    margin-left: 20px;
+                    margin-top: 20px;
+                }
+            }
+            &:hover{
+                .ai_sub{
+                    display: block;
+                }
+            }
+            .ai_sub{
+                display: none;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 390px;
+                padding-top: 21px;
+                font-size: 14px;
+                background-color: #fff;
+                >a{
+                    display: block;
+                    width: 350px;
+                    height: 50px;
+                    line-height: 50px;
+                    border-bottom: 1px solid #ededed;
+                    text-indent: 10px;
+                    color: #2b2b2b;
+                    margin: 0 auto;
+                    &:hover{
+                        color: #52a43c;
+                    }
+                }
+            }
+            .ai_text{
+              width: 100%;  
+              height: 14px;
+              line-height: 14px;
+              padding: 18px 0;
+              background-color: #f2f2f2;
+              margin-top: 20px;
+              >a{
+                  float: left;
+                  margin-left: 30px;
+                  color: #8c8c8c;
+                  &:hover{
+                      color: #52a43c;
+                  }
+              }
+              a:first-child{
+                  &::after{
+                      content: "";
+                      display: inline-block;
+                      width: 11px;
+                      height: 9px;
+                      background: url(../img/bg.png) no-repeat -31px -42px;
+                      margin-left: 5px;
+                  }
+              }
+            }
+        }
+        @media all and (max-width:1250px){
+            .all_item{
+                display: block;
+            }
+        }
+        .gtcl_item:last-child{
+            position: relative;
+            .more_ico{
+                position: absolute;
+                top: 24px;
+                right: 4px;
+                width: 7px;
+                height: 4px;
+                background: url(../img/bg.png) no-repeat 0 -5px;
+                transition: 0.4s;
+            }
+            .more_sub{
+                display: none;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 88px;
+                height: 94px;
+                background-color: #454648;
+                >a{
+                    display: block;
+                    width: 88px;
+                    height: 28px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #8c8c8c;
+                    &:hover{
+                        background-color: #6bc30d;
+                        color: #fff;
+                    }
+                }
+            }
+            &:hover{
+                .more_ico{
+                    transform: rotate(180deg);
+                }
+                .more_sub{
+                    display: block;
+                }
+            }
+        }
+        
+    }
+    .gtc_right{
+        width: 182px;
+        height: 32px;
+        margin-top: 10px;
+    }
+    .gtcr_sch{
+        width: 14px;
+        height: 14px;
+        margin-top: 8px;
+        background: url(../img/bg.png) no-repeat -8px 0;
+        text-indent: -9999px;
+        cursor: pointer;
+        &:hover{
+            background: url(../img/bg.png) no-repeat -23px 0;
+        }
+    }
+    .gtcr_list{
+        .gtcr_item{
+            a{
+                display: block;
+                width: 70px;
+                height: 32px;
+                font-weight: bold;
+                line-height: 32px;
+                text-align: center;
+            }
+        }
+        .gtcr_item:first-child{
+            a{
+                background-color: #505050;
+                color: #acacac;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+        .gtcr_item:last-child{
+            a{
+               background-color: #6bc30d;
+              color: #fff;  
+            }
+        }
+    }
+}
+//g_foot
+.g_foot{
+    font-family: "微软雅黑";
+    padding: 20px 0;
+    background-color: #222324;
+    .gf_content{
+        height: 100%;
+    }
+    .gfc_top{
+        position: relative;
+        line-height: 22px;
+        a:not([class="hyyz"]){
+            float: left;
+            margin-right: 40px;
+            font-size: 14px;
+            color: #cecece;
+        }
+        a:nth-of-type(5){
+            width: 22px;
+            height: 20px;
+            background: url(../img/yy-icon.png) no-repeat 0 -190px;
+        }
+        span{
+            float: left;
+            margin-right: 20px;
+            color: #8e8e8e;
+        }
+        .hyyz{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        @media only all and (max-width:950px){
+           .hyyz{
+               top: 22px;
+           } 
+        }
+    }
+    p{
+        line-height: 16px;
+        margin-top: 22px;
+        color: #8e8e8e;
+        a{
+            color: #70bd1d;
+        }
+    }
+}
